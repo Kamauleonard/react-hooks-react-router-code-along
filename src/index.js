@@ -1,16 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function Home() {
-  return (
-    <div>
-      <h1>Home!</h1>
-    </div>
-  );
-}
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
-  return <Home />;
-}
+import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
